@@ -3,4 +3,4 @@
   <label for="box">Input from parent </label>
 	<input #box value="">
 </div>
-	<app-test></app-test>
+	<app-test [childMessage]='box.value'></app-test>

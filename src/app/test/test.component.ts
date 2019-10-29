@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-test",
@@ -7,13 +7,17 @@ import { Component, OnInit } from "@angular/core";
 })
 export class TestComponent implements OnInit {
   st: string;
-
+  @Input() childMessage
   constructor() {}
 
   ngOnInit() {}
 
   values = "";
   values2 = "";
+  values3= ""
+  vai() {
+    this.childMessage;
+  }
 
   onKey(value: string) {
     this.values += value + " | ";
@@ -22,5 +26,7 @@ export class TestComponent implements OnInit {
   onClick(value: string)  {
     this.values2 = value.toUpperCase()
   }
+
+
 
 }
