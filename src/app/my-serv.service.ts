@@ -5,10 +5,14 @@ export class MyServService {
 
   constructor() { }
 
-  let data: {id: number, name: string}[] = [
+  data: {id: number, name: string}[] = [
     { "id": 1,"name": "gino"},
     { "id": 2,"name": "pino"},
     { "id": 3,"name": "nino"}
   ];
+
+  getData() {
+    return this.data;
+  }
 
 }

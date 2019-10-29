@@ -1,9 +1,11 @@
-<h2>child</h2>
-<div class="child">
-	<label for="box1">Input 1 </label>
-	<input #box1><br>
-	<label for="box1">Input 1 </label>
-	<input #box2 value="{{childMessage}}">
-  <button (click)=vai(childMessage)>GO</button>
-</div>
+<form #f=ngForm>
+	<h2>child</h2>
+	<div class="child">
+		<label for="box1">Input 1 </label>
+		<input #box1><br>
+		<label for="box1">Input 2 </label>
+		<input #box2 value="{{childMessage}}">
+		<button (click)=vai(childMessage)>GO</button>
+	</div>
+</form>
 MESSAGE FROM PARENT: {{childMessage}}

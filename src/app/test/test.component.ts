@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { MyServService } from '../my-serv.service'
+import { Person } from '../person'
 
 @Component({
   selector: "app-test",
@@ -8,7 +10,10 @@ import { Component, OnInit, Input } from "@angular/core";
 export class TestComponent implements OnInit {
   st: string;
   @Input() childMessage
-  constructor() {}
+
+  persona: Person;
+
+  constructor(private serv: MyServService) {}
 
   ngOnInit() {}
 
