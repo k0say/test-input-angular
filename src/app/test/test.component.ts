@@ -14,7 +14,9 @@ export class TestComponent implements OnInit {
 
   values = "";
   values2 = "";
-  values3= ""
+  //variabile usata per copiare il contenuto del parent dopo il click
+  values3= "";
+
   vai() {
     this.childMessage;
   }
