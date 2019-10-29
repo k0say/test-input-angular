@@ -1,6 +1,6 @@
 <h2>parent</h2>
 <div class="parent">
-  <label for="box">Input from parent </label>
+  <label for="box" [(ngModel)]="persona.name" >Input from parent </label>
 	<input #box value="">
 </div>
-	<app-test></app-test>
+	<app-test [childMessage]='box.value'></app-test>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Person } from './person';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  //parentMessage=""
+  public persona: Person
+
+  constructor() {
+    this.persona = new Person();
+    this.persona.id = "1";
+    this.persona.name = "gino"
+  }
+  
 }
